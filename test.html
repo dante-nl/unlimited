@@ -2,15 +2,9 @@
 <head>
   <title>Sign in with ∞ Test Area</title
   <script>
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
-
-var name = getUrlParam('name','Empty');
+    var split = document.URL.split("?");
+var replace = split[1].replace("name=", "");
+document.getElementById("name").innerHTML = `Your name is ${replace}`;
 </script>
 </head>
 <body>
