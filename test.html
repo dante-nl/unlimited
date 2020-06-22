@@ -3,10 +3,8 @@
   <title>Sign in with ∞ Test Area</title
 </head>
 <body>
-  <script>
     var split = document.URL.split("?");
 var replace = split[1].replace("name=", "");
 document.getElementById("name").innerHTML = `Your name is ${replace}`;
-</script>
 <p id="name">Your name is</p>
 </body>
