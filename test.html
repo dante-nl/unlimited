@@ -1,12 +1,17 @@
+
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Sign in with ∞ Test Area</title>
+<title>hello querystring</title>
 </head>
 <body>
-  <script>
-    var split = document.URL.split("?");
-var replace = split[1].replace("name=", "");
-document.getElementById("name").innerHTML = `Your name is ${replace}`;
-  </script>
+
 <p id="name">Your name is</p>
+
+<script>
+const queryString = new URLSearchParams(window.location.search);
+const name = queryString.get('name');
+document.getElementById('name').innerHTML = `Your name is ${name}`
+</script>
 </body>
+</html>
