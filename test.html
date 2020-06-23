@@ -8,8 +8,9 @@
 
 <p id="name">Your name is</p>
   <p id="email">Your e-mail is</p>
-
-
+  
+<img id="avatar", src='data:image/png;base64,'/>
+        
 <script>
 const queryString = new URLSearchParams(window.location.search);
 const name = queryString.get('name');
@@ -17,6 +18,10 @@ document.getElementById('name').innerHTML = `Your name is ${name}`
 
 const email = queryString.get('email');
 document.getElementById('email').innerHTML = `Your e-mail is ${email}`
+
+const avatar = queryString.get('avatar');
+document.getElementById('avatar').innerHTML = `Your avatar is bellow}`
+
 </script>
 </body>
 </html>
