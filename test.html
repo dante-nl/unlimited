@@ -19,9 +19,8 @@ document.getElementById('name').innerHTML = `Your name is ${name}`
 const email = queryString.get('email');
 document.getElementById('email').innerHTML = `Your e-mail is ${email}`
 
-const avatar = queryString.get('avatar');
-document.getElementById('avatar').innerHTML = `Your avatar is bellow}`
-
+var img = document.getElementById('avatar')
+img.src = `data:image/png;base64,${avatar}
 </script>
 </body>
 </html>
