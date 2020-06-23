@@ -7,11 +7,16 @@
 <body>
 
 <p id="name">Your name is</p>
+  <p id="email">Your e-mail is</p>
 
 <script>
 const queryString = new URLSearchParams(window.location.search);
 const name = queryString.get('name');
 document.getElementById('name').innerHTML = `Your name is ${name}`
+
+const email = queryString.get('email');
+document.getElementById('name').innerHTML = `Your e-mail is ${email}`
+
 </script>
 </body>
 </html>
