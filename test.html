@@ -1,5 +1,5 @@
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 <title>Sign in with ∞</title>
@@ -7,9 +7,9 @@
 <body>
 
 <p id="name">Your name is</p>
-  <p id="email">Your e-mail is</p>
-<img id="avatar" src="avatar"/>
-  
+<p id="email">Your e-mail is</p>
+<img id="avatar"/>
+        
 <script>
 const queryString = new URLSearchParams(window.location.search);
 const name = queryString.get('name');
@@ -20,7 +20,7 @@ document.getElementById('email').innerHTML = `Your e-mail is ${email}`
 
 var avatar = queryString.get('avatar')
 var img = document.getElementById('avatar')
-img.src = `data:image/png;base64,${avatar}`
+img.src = `data:image/png;base64,${avatar}
 </script>
 </body>
 </html>
